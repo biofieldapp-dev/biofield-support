@@ -54,6 +54,9 @@
         li {
             margin-bottom: 10px;
         }
+        a {
+            color: #ff5555;
+        }
         .support-section {
             text-align: center;
             margin-bottom: 40px;
@@ -84,7 +87,7 @@
 <body>
     <div class="container">
         <h1>BioField App Support</h1>
-        
+
         <div class="support-section">
             <p>Thank you for using BioField! If you have any questions, require assistance with your offline mapping features, find any issues, or would like to suggest new capabilities, please reach out to us directly.</p>
             <a href="mailto:biofieldapp@gmail.com" class="contact-button">Contact Support</a>
@@ -94,28 +97,35 @@
         <p>This privacy policy governs your use of the software application BioField for mobile devices. BioField is designed as a professional offline utility for ecological and biological field data logging.</p>
 
         <h2>1. Data Collection & Storage</h2>
-        <p>BioField operates completely locally on your device. We do not collect, transmit, upload, or share any of your personal or biological data off your device. All information you input—including project names, user initials, biological registers, custom requirement fields, and precise GPS coordinate paths—is stored securely inside the application's private, local SQLite database container. This data never leaves your device unless you explicitly and manually initiate an export or sharing transaction using the native iOS Share Sheet.</p>
+        <p>BioField operates locally on your device. We do not collect, transmit, upload, or sell any of your personal or biological data off your device. All information you input—including project names, user initials, biological registers, custom requirement fields, and precise GPS coordinate paths—is stored securely inside the application's private, local database container. This data never leaves your device unless you explicitly and manually initiate an export or sharing transaction. The only network activity the app performs is to display and download maps, as described in Section 2.</p>
 
-        <h2>2. Device Permissions Used</h2>
+        <h2>2. Maps & Network Access</h2>
+        <p>BioField displays maps using OpenFreeMap, with map data from OpenMapTiles and OpenStreetMap. To show online maps or to download a region for offline use, your device requests map tiles directly from OpenFreeMap's servers. These requests reveal only the approximate geographic area being displayed; they never include your observations, projects, photos, or any other personal data. Downloaded map tiles are stored locally on your device for offline use and are removed when you delete an offline map or uninstall the app. OpenFreeMap is an independent service that we do not operate or control; please refer to <a href="https://openfreemap.org">OpenFreeMap</a> and <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> for their respective terms.</p>
+
+        <h2>3. Device Permissions Used</h2>
         <p>To provide its core scientific capabilities, BioField requires the following device permissions:</p>
         <ul>
-            <li><strong>Precise Location:</strong> Utilized in high-accuracy background modes to record the continuous paths of your sampling events (transects) and tag biological records with accurate GPS coordinates.</li>
+            <li><strong>Precise Location (including in the background):</strong> Utilized in high-accuracy modes to record the continuous paths of your sampling events (transects) and to tag biological records with accurate GPS coordinates. Background access allows the app to continue recording a sampling-event path when the screen is off or the app is not in the foreground. Location data is stored on your device and is never sent to us.</li>
             <li><strong>Camera:</strong> Utilized to allow you to take and attach photographs directly to your biological registers.</li>
             <li><strong>Photo Library:</strong> Utilized to allow you to import existing photographs into your registers.</li>
+            <li><strong>Internet / Network Access:</strong> Utilized solely to display maps and to download map regions for offline use, as described in Section 2. It is never used to transmit your field data.</li>
         </ul>
         <p>All assets accessed via these permissions remain isolated inside the application sandbox on your physical device.</p>
 
-        <h2>3. Third-Party Services & Tracking</h2>
-        <p>BioField does not include any third-party analytics libraries, advertising networks, or user-tracking frameworks. We do not track your activity across other companies' applications or websites, and we do not share any data with third-party partners.</p>
+        <h2>4. Third-Party Services & Tracking</h2>
+        <p>BioField does not include any third-party analytics libraries, advertising networks, or user-tracking frameworks. We do not track your activity across other companies' applications or websites, and we do not share your personal or biological data with third-party partners. The only third-party service the app contacts is the OpenFreeMap map provider, strictly to deliver map imagery as described in Section 2.</p>
 
-        <h2>4. Data Deletion</h2>
-        <p>You have full, absolute control over your data. Deleting a project, a sampling event, or an individual register inside the application permanently and immediately purges those records and their associated photo files from your local storage. Uninstalling the BioField application from your device will permanently delete all local databases and saved biological photos.</p>
+        <h2>5. Data Deletion</h2>
+        <p>You have full, absolute control over your data. Deleting a project, a sampling event, or an individual register inside the application permanently and immediately purges those records and their associated photo files from your local storage. Deleting an offline map removes its downloaded tiles. Uninstalling the BioField application from your device will permanently delete all local databases, saved biological photos, and downloaded offline maps.</p>
 
-        <h2>5. Changes to this Policy</h2>
+        <h2>6. Children's Privacy</h2>
+        <p>BioField is intended for researchers, students, and naturalists and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+        <h2>7. Changes to this Policy</h2>
         <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically to stay informed about our data handling practices.</p>
 
         <div class="footer">
-            Effective Date: June 6, 2026<br>
+            Effective Date: June 20, 2026<br>
             Copyright &copy; 2026 Daniel Balcazar G. All Rights Reserved.
         </div>
     </div>
