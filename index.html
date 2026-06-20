@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioField Support</title>
+    <title>BioField - Support & Privacy Policy</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -17,25 +17,46 @@
             min-height: 100vh;
         }
         .container {
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
             background: rgba(255, 255, 255, 0.05);
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(255, 10, 10, 0.1);
             border: 1px solid rgba(255, 10, 10, 0.2);
-            text-align: center;
         }
         h1 {
             font-size: 32px;
             color: #ff3333;
             margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            color: #ff5555;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 10, 10, 0.2);
+            padding-bottom: 5px;
         }
         p {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.6;
             color: #cccccc;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+            color: #cccccc;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .support-section {
+            text-align: center;
+            margin-bottom: 40px;
         }
         .contact-button {
             display: inline-block;
@@ -47,6 +68,7 @@
             font-weight: bold;
             font-size: 16px;
             transition: background-color 0.2s ease;
+            margin-top: 10px;
         }
         .contact-button:hover {
             background-color: #e60000;
@@ -55,15 +77,45 @@
             margin-top: 40px;
             font-size: 12px;
             color: #666666;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>BioField App Support</h1>
-        <p>Thank you for using BioField! If you have any questions, require assistance with your offline mapping features, find any issues, or would like to suggest new capabilities, please reach out to us directly.</p>
-        <a href="mailto:biofieldapp@gmail.com" class="contact-button">Contact Support</a>
+        
+        <div class="support-section">
+            <p>Thank you for using BioField! If you have any questions, require assistance with your offline mapping features, find any issues, or would like to suggest new capabilities, please reach out to us directly.</p>
+            <a href="mailto:biofieldapp@gmail.com" class="contact-button">Contact Support</a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p>This privacy policy governs your use of the software application BioField for mobile devices. BioField is designed as a professional offline utility for ecological and biological field data logging.</p>
+
+        <h2>1. Data Collection & Storage</h2>
+        <p>BioField operates completely locally on your device. We do not collect, transmit, upload, or share any of your personal or biological data off your device. All information you input—including project names, user initials, biological registers, custom requirement fields, and precise GPS coordinate paths—is stored securely inside the application's private, local SQLite database container. This data never leaves your device unless you explicitly and manually initiate an export or sharing transaction using the native iOS Share Sheet.</p>
+
+        <h2>2. Device Permissions Used</h2>
+        <p>To provide its core scientific capabilities, BioField requires the following device permissions:</p>
+        <ul>
+            <li><strong>Precise Location:</strong> Utilized in high-accuracy background modes to record the continuous paths of your sampling events (transects) and tag biological records with accurate GPS coordinates.</li>
+            <li><strong>Camera:</strong> Utilized to allow you to take and attach photographs directly to your biological registers.</li>
+            <li><strong>Photo Library:</strong> Utilized to allow you to import existing photographs into your registers.</li>
+        </ul>
+        <p>All assets accessed via these permissions remain isolated inside the application sandbox on your physical device.</p>
+
+        <h2>3. Third-Party Services & Tracking</h2>
+        <p>BioField does not include any third-party analytics libraries, advertising networks, or user-tracking frameworks. We do not track your activity across other companies' applications or websites, and we do not share any data with third-party partners.</p>
+
+        <h2>4. Data Deletion</h2>
+        <p>You have full, absolute control over your data. Deleting a project, a sampling event, or an individual register inside the application permanently and immediately purges those records and their associated photo files from your local storage. Uninstalling the BioField application from your device will permanently delete all local databases and saved biological photos.</p>
+
+        <h2>5. Changes to this Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically to stay informed about our data handling practices.</p>
+
         <div class="footer">
+            Effective Date: June 6, 2026<br>
             Copyright &copy; 2026 Daniel Balcazar G. All Rights Reserved.
         </div>
     </div>
